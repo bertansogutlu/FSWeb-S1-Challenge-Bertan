@@ -172,7 +172,7 @@ NOT: DÖNDÜĞÜNÜZ DİZİN YUKARIDAKİ BİÇİMLE EŞLEŞMESİ GEREKİR, YA DA
 ÖRNEK: fenomenler dizisi ve 3 sayısı ile indekseGoreFenomen çağrılırsa, `3. indekste bulunan fenomen: Leo Messi' */
 
 function indekseGoreFenomen(dizi,indeks) {
-  return dizi[indeks].profile;
+  return `${indeks}. indekste bulunan fenomen: ${dizi[indeks].profile}`;
 }
 
 
@@ -231,7 +231,7 @@ Aşağıdakileri yapmak için fenomenEkle'i kullanın:
 
 function fenomenEkle(dizi,num,pro,fol,pos,pla) {
   const yeniDizi = [...dizi];
-  const yeniNesne = {number:num,profile:pro,followers:fol,post:pos,platform:pla};
+  const yeniNesne = {number:num,profile:pro,followers:fol,posts:pos,platform:pla};
   yeniDizi.push(yeniNesne);
   return yeniDizi;
 }
