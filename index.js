@@ -291,7 +291,9 @@ function platformaGoreCokGonderiYapanFenomen(dizi,pla){
   let gonderi = null;
   let fenomen = null;
   for (let i in dizi) {
-    if (dizi[i].platform === pla && dizi[i].posts > gonderi) {
+    if (dizi[i].platform === pla &&
+				dizi[i].posts !== "NA" &&
+				dizi[i].posts > gonderi) {
 		gonderi = dizi[i].posts;
     fenomen = dizi[i].profile;
     }
